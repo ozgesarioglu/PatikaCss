@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:5500/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    
+<link rel="stylesheet" href="./Google_files/stil.css"></head>
+
+ <body id="menuler">   
+   <header id="banner">
+    <img src="./Google_files/google.jpg" alt="Google görsel" width="500">
+   </header>
+   <nav>
+
+    <p>Search the web using Google! </p>
+    <input type="text" size="50"> <br>
+    <input type="submit" value="Google Search">
+    <input type="submit" value="I&#39;m feeling lucky"><br>
+
+     
+       <ul id="firstmenu">
+       <li><a href="http://127.0.0.1:5500/">Special Searches</a></li>
+       <li><a href="http://127.0.0.1:5500/">Stanford Search</a></li>
+       <li><a href="http://127.0.0.1:5500/">Linux Search</a></li>
+   </ul>
+  
+   <ul id="secondmenu">
+       <li><a href="http://127.0.0.1:5500/">Help!</a></li>
+       <li><a href="http://127.0.0.1:5500/">About Google!</a></li>
+       <li><a href="http://127.0.0.1:5500/">Company Info</a></li>
+       <li><a href="http://127.0.0.1:5500/">Google Logos</a></li>
+   </ul>
+<div id="thirdmenu">
+   <p>Get Google! <br> updates monthly:</p>
+   <input type="text" value="your e-mail"> <br>
+   <input type="submit" value="Subscribe" <li=""><a href="http://127.0.0.1:5500/">Archive</a> 
+  
+</div>
+   </nav>
+   <article>
+
+   </article>
+<aside>
+
+</aside>
+<br>
+
+
+<footer id="altmenu"> 
+    <p>Copyright 1998 Google Inc.</p>
+</footer>
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+ </body></html>
